@@ -1,0 +1,21 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Start Kafka Demo",
+            "type": "shell",
+            "command": "mvn spring-boot:run",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Start Kafka Infrastructure",
+            "type": "shell",
+            "command": "docker-compose up -d",
+            "problemMatcher": []
+        }
+    ]
+}
